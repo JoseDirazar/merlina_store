@@ -31,7 +31,7 @@ const Billboard: React.FC<BillboardProps> = ({ data }) => {
   return (
     <div className=" rounded-xl p-4 sm:p-6 lg:p-8">
       <Swiper
-        className=" rounded-xl shadow-lg shadow-black/30 dark:shadow-neutral-500/50"
+        className=" rounded-xl shadow-[0_25px_25px_rgba(153,114,216,0.30)] dark:shadow-neutral-500/50"
         style={swiperStyles}
         navigation
         pagination={{ type: "bullets" }}

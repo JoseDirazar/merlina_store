@@ -12,7 +12,7 @@ import "./globals.css";
 const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Belli Deportes",
+  title: "Merlina Tienda Magica desde 2019",
   description: "Mas de 50 años brindando nuestros productos en Olavarría",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} dark:bg-black`}>
+      <body className={`${font.className} bg-purple-300/30 dark:bg-black`}>
         <ThemeContextProvider>
           <ToastProvider />
           <ModalProvider />

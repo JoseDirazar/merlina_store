@@ -90,13 +90,13 @@ const Summary = () => {
   };
 
   return (
-    <div className="mt-16 rounded-lg bg-gray-50 px-4 py-6 dark:bg-neutral-900 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8">
-      <h2 className="text-lg font-medium text-gray-900 dark:text-neutral-300">
+    <div className="mt-16 rounded-lg bg-[#E8D7FF] px-4 py-6 dark:bg-neutral-900 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8">
+      <h2 className="text-lg font-bold text-[#A08BC9] dark:text-neutral-300">
         Sumario:
       </h2>
       <label
         htmlFor="name"
-        className="text-md mt-5 block font-medium text-gray-900 dark:text-neutral-300"
+        className="text-md mt-5 block font-bold text-[#A08BC9] dark:text-neutral-300"
       >
         Nombre:
       </label>
@@ -104,7 +104,7 @@ const Summary = () => {
       {errorInUserData.name ? (
         <input
           id="name"
-          className="text-md mt-2 rounded border border-gray-300 px-3 py-2 font-medium text-gray-900 focus:border-neutral-500 focus:outline-none  dark:bg-black dark:text-neutral-200"
+          className="text-md mt-2 rounded border border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-purple-500 focus:outline-none  dark:bg-black dark:text-neutral-200"
           name="name"
           value={formData.name}
           onChange={handleFormData}
@@ -112,7 +112,7 @@ const Summary = () => {
       ) : (
         <input
           id="name"
-          className="text-md mt-2 rounded border border-gray-300 px-3 py-2 font-medium text-gray-900 focus:border-green-700 focus:outline-none dark:bg-black dark:text-neutral-200"
+          className="text-md mt-2 rounded border border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-green-500 focus:outline-none dark:bg-black dark:text-neutral-200"
           name="name"
           value={formData.name}
           onChange={handleFormData}
@@ -121,14 +121,14 @@ const Summary = () => {
 
       <label
         htmlFor="name"
-        className="text-md mb-0 mt-3 block font-medium text-gray-900 dark:text-neutral-300"
+        className="text-md mb-0 mt-3 block font-bold text-[#A08BC9] dark:text-neutral-300"
       >
         Apellido:
       </label>
       {errorInUserData.lastname ? (
         <input
           id="lastname"
-          className="text-md mt-2 rounded border border-gray-300 px-3 py-2 font-medium text-gray-900 focus:border-neutral-500 focus:outline-none dark:bg-black dark:text-neutral-200"
+          className="text-md mt-2 rounded border border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-purple-500 focus:outline-none dark:bg-black dark:text-neutral-200"
           name="lastname"
           value={formData.lastname}
           onChange={handleFormData}
@@ -136,7 +136,7 @@ const Summary = () => {
       ) : (
         <input
           id="lastname"
-          className="text-md mt-2 rounded border border-gray-300 px-3 py-2 font-medium text-gray-900 focus:border-green-700 focus:outline-none dark:bg-black dark:text-neutral-200"
+          className="text-md mt-2 rounded border border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-green-500 focus:outline-none dark:bg-black dark:text-neutral-200"
           name="lastname"
           value={formData.lastname}
           onChange={handleFormData}
@@ -145,7 +145,7 @@ const Summary = () => {
 
       <label
         htmlFor="telefono"
-        className="text-md mb-0 mt-3 block font-medium text-gray-900 dark:text-neutral-300"
+        className="text-md mb-0 mt-3 block font-bold text-[#A08BC9] dark:text-neutral-300"
       >
         Telefono:
       </label>
@@ -153,7 +153,7 @@ const Summary = () => {
       {errorInUserData.phone ? (
         <input
           id="telefono"
-          className="text-md mt-2 rounded border border-gray-300 px-3 py-2 font-medium text-gray-900 focus:border-neutral-500 focus:outline-none dark:bg-black dark:text-neutral-200"
+          className="text-md mt-2 rounded border border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-purple-500 focus:outline-none dark:bg-black dark:text-neutral-200"
           name="phone"
           value={formData.phone}
           onChange={handleFormData}
@@ -161,7 +161,7 @@ const Summary = () => {
       ) : (
         <input
           id="telefono"
-          className="text-md text-gray- mt-2 rounded border border-gray-300 px-3 py-2 font-medium focus:border-green-700 focus:outline-none dark:bg-black dark:text-neutral-200"
+          className="text-md text-gray- mt-2 rounded border border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-green-500 focus:outline-none dark:bg-black dark:text-neutral-200"
           name="phone"
           value={formData.phone}
           onChange={handleFormData}
@@ -176,14 +176,14 @@ const Summary = () => {
       <Tooltip id="name-tooltip" className="dark:bg-black" />
       <label
         htmlFor="direccion"
-        className="text-md mb-0 mt-3 block font-medium text-gray-900 dark:text-neutral-300"
+        className="text-md mb-0 mt-3 block font-bold text-[#A08BC9] dark:text-neutral-300"
       >
         Dirección:
       </label>
       {errorInUserData.address ? (
         <input
           id="direccion"
-          className="text-md mt-2 rounded border border-gray-300 px-3 py-2 font-medium text-gray-900 focus:border-neutral-500 focus:outline-none dark:bg-black dark:text-neutral-200"
+          className="text-md mt-2 rounded border border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-purple-500 focus:outline-none dark:bg-black dark:text-neutral-200"
           name="address"
           value={formData.address}
           onChange={handleFormData}
@@ -191,7 +191,7 @@ const Summary = () => {
       ) : (
         <input
           id="direccion"
-          className="text-md mt-2 rounded border border-gray-300 px-3 py-2 font-medium text-gray-900 focus:border-green-700 focus:outline-none dark:bg-black dark:text-neutral-200"
+          className="text-md mt-2 rounded border  border-purple-300 px-3 py-2 font-medium text-[#A08BC9] focus:border-green-500 focus:outline-none dark:bg-black dark:text-neutral-200"
           name="address"
           value={formData.address}
           onChange={handleFormData}
@@ -204,8 +204,8 @@ const Summary = () => {
       />
       <Tooltip id="address-tooltip" className="dark:bg-black" />
       <div className="mt-6 space-y-4">
-        <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium text-gray-900 dark:text-neutral-300">
+        <div className="flex items-center justify-between border-t border-[#A08BC9] pt-4">
+          <div className="text-base font-bold text-[#A08BC9] dark:text-neutral-300">
             Total
           </div>
           <Currency value={totalPrice} />
@@ -221,7 +221,7 @@ const Summary = () => {
             !!errorInUserData.name ||
             !!errorInUserData.lastname
           }
-          className="mt-6 w-full max-w-sm bg-white shadow-lg shadow-neutral-600/50"
+          className="mt-6 w-full max-w-sm bg-white shadow-lg shadow-purple-300"
         >
           <Image
             className="inline-block py-0"

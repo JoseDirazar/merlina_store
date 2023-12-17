@@ -44,16 +44,16 @@ const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
 
   return (
     <div className="mb-8">
-      <h3 className="text-lg font-semibold dark:text-neutral-300">{name}</h3>
+      <h3 className="text-lg text-[#A08BC9] font-semibold dark:text-neutral-300">{name}</h3>
       <hr className="my-4" />
       <div className="flex flex-wrap gap-2">
         {data.map((filter) => (
           <div key={filter.id} className="flex items-center">
             <Button
               className={cn(
-                "rounded-md border border-gray-300 bg-white p-2 text-sm text-gray-800 dark:border-white dark:bg-neutral-900 dark:text-neutral-300",
+                "rounded-md p-2 border-[#A08BC9] text-sm text-[#A08BC9] dark:border-white dark:bg-neutral-900 dark:text-neutral-300",
                 selectedValue === filter.id &&
-                  "bg-black text-neutral-300 dark:bg-neutral-300 dark:text-black",
+                  "bg-[#A08BC9] text-purple-900 dark:bg-neutral-300 dark:text-black",
               )}
               onClick={() => onClick(filter.id)}
             >

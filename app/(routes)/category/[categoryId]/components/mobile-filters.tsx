@@ -23,7 +23,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({ sizes, colors }) => {
 
   return (
     <>
-      <Button onClick={onOpen} className="flex items-center gap-x-2 lg:hidden">
+      <Button onClick={onOpen} className="flex items-center gap-x-2 lg:hidden text-[#A08BC9]">
         Filters
         <Plus size={20} />
       </Button>
@@ -39,7 +39,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({ sizes, colors }) => {
 
         {/* Dialog position */}
         <div className="fixed inset-0 z-40 flex">
-          <Dialog.Panel className=" relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-6 shadow-xl dark:bg-neutral-800 ">
+          <Dialog.Panel className=" relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-[#E8D7FF]/70 backdrop-blur-lg py-4 pb-6 shadow-xl dark:bg-neutral-800 ">
             {/* Close button */}
             <div className="flex items-center justify-end px-4">
               <IconButton icon={<X size={15} />} onClick={onClose} />

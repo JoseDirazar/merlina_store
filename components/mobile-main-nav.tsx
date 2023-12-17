@@ -37,7 +37,7 @@ const MobileMainNav: React.FC<MainNavProps> = ({ data }) => {
     <>
       <Button
         onClick={onOpen}
-        className="bg-white p-0 text-black dark:bg-black dark:text-white lg:hidden"
+        className="bg-[#E8D7FF] border-none p-0 text-purple-900 dark:bg-black dark:text-[#E8D7FF] lg:hidden"
       >
         <Menu size={20} />
       </Button>
@@ -49,7 +49,7 @@ const MobileMainNav: React.FC<MainNavProps> = ({ data }) => {
       >
         <div className=" fixed inset-0 bg-black/10 backdrop-blur-[2px]" />
 
-        <Dialog.Panel className="relative mr-auto flex h-full w-full max-w-md flex-col overflow-y-auto bg-white/70 backdrop-blur-lg py-4 pb-6 shadow-xl dark:bg-transparent/70">
+        <Dialog.Panel className="relative mr-auto flex h-full w-full max-w-md flex-col overflow-y-auto bg-[#E8D7FF]/70 backdrop-blur-lg py-4 pb-6 shadow-xl dark:bg-transparent/70">
           {/* Close button */}
           <div className="flex items-center px-[1.1rem]">
             <IconButton icon={<X size={15} />} onClick={onClose} />
@@ -65,8 +65,8 @@ const MobileMainNav: React.FC<MainNavProps> = ({ data }) => {
                   className={cn(
                     "text-lg font-medium transition-colors hover:text-black dark:text-slate-300 dark:hover:font-bold dark:hover:text-white",
                     route.active
-                      ? "text-black dark:text-white"
-                      : "text-neutral-500 dark:text-slate-400",
+                      ? "text-purple-900 dark:text-white"
+                      : "text-[#8871B7] dark:text-slate-400",
                   )}
                 >
                   {route.label}
