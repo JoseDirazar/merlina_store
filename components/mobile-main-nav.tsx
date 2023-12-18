@@ -44,7 +44,7 @@ const MobileMainNav: React.FC<MainNavProps> = ({ data }) => {
       <Dialog
         open={open}
         as="div"
-        className="absolute top-0 z-30 h-[100vh] w-[50%] sm:w-[40%] lg:hidden"
+        className="absolute top-0 z-30 h-[100vh] w-[55%] sm:w-[40%] lg:hidden"
         onClose={onClose}
       >
         <div className=" fixed inset-0 bg-black/10 backdrop-blur-[2px]" />
@@ -54,16 +54,16 @@ const MobileMainNav: React.FC<MainNavProps> = ({ data }) => {
           <div className="flex items-center px-[1.1rem]">
             <IconButton icon={<X size={15} />} onClick={onClose} />
           </div>
-          <div className="mr-3 sm:mr-6  flex h-full max-h-[60vh] flex-col items-end justify-evenly p-6">
+          <div className=" sm:mr-6  flex h-full max-h-[60vh] flex-col items-end justify-evenly p-6">
             {routes.map((route) => (
               <div
                 key={route.href + "mobile"}
-                className="mr-0 sm:mr-3 flex min-w-[40%] flex-col items-end hover:scale-[1.15]"
+                className="mr-0 sm:mr-3 flex min-w-[70%] flex-col items-end hover:scale-[1.15]"
               >
                 <Link
                   href={route.href}
                   className={cn(
-                    "text-lg font-medium transition-colors hover:text-black dark:text-slate-300 dark:hover:font-bold dark:hover:text-white",
+                    "text-md font-medium transition-colors hover:text-black dark:text-slate-300 dark:hover:font-bold dark:hover:text-white",
                     route.active
                       ? "text-purple-900 dark:text-white"
                       : "text-[#8871B7] dark:text-slate-400",
