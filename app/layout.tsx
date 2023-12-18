@@ -12,8 +12,8 @@ import "./globals.css";
 const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Merlina Tienda Magica desde 2019",
-  description: "Mas de 50 años brindando nuestros productos en Olavarría",
+  title: "Merlina Tienda Magica",
+  description: "Desde 2019 radiando energia al universo",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-purple-300/30 dark:bg-black`}>
+      <body className={`${font.className} bg-purple-300/30 dark:bg-[#2f1f4e]`}>
         <ThemeContextProvider>
           <ToastProvider />
           <ModalProvider />

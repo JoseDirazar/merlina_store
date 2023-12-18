@@ -29,7 +29,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
             "text-sm font-medium transition-colors hover:text-[#ad8cf4] dark:text-rose-300 dark:hover:text-white",
             route.active
               ? "text-purple-900 dark:text-white"
-              : "text-[#8871B7] dark:text-slate-300",
+              : "text-[#8871B7] dark:text-[#8871B7]",
           )}
         >
           {route.label}

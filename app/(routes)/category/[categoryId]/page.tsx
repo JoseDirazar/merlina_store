@@ -54,12 +54,12 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
       colors.push({...product.color as FilterProps});
     }
   }
-  console.log(sizes)
-  console.log(colors)
+/*   console.log(sizes)
+  console.log(colors) */
   const category = await getCategory(params.categoryId);
 
   return (
-    <div className=" dark:bg-black">
+    <div className=" dark:bg-[#2f1f4e]">
       <Container>
         <Billboard data={category.billboard} />
         <div className="px-4 pb-24 sm:px-6 lg:px-8">

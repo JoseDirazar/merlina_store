@@ -39,7 +39,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
   return (
     <div
       onClick={handleClick}
-      className="group cursor-pointer space-y-4 bg-white/10 rounded-xl shadow-[0_25px_25px_rgba(153,114,216,0.30)] p-3 dark:shadow-[0_25px_25px_rgba(153,114,216,0.15)] dark:bg-neutral-950"
+      className="group cursor-pointer space-y-4 bg-white/10 rounded-xl shadow-[0_25px_25px_rgba(153,114,216,0.30)] p-3 dark:shadow-[0_25px_25px_rgba(35,19,54,0.70)] dark:bg-transparent"
     >
       {/* Image & actions */}
       <div className="relative aspect-square rounded-xl bg-black ">
